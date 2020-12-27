@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anurag Agrawal</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- popper.min.js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+
+
+
+<!-- 
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ -->
+
+        
+
+        <!-- Top Right Image: -->
+        <link rel="shortcut icon" type="image/jpeg" href="images/image4.jpg">
+    
+        <!-- <meta name="viewport" content="width=device-width, inital-scale=1"> -->
+
+        <!-- <style type="text/css">
+          body{
+             background: linear-gradient(to bottom, #00AEB8 0%, #00AEB8 350px, #ededed 350px, #ededed 100%);
+            /* background: linear-gradient(to bottom, #333333 0%, #333333 350px, #EDEDED 350px, #EDEDED 100%); */
+            font-family: georgia, garamond, serif; font-size: 14px;
+          }
+
+          .hrefwithoutdecoration{
+            color: #000000 !important; text-decoration: none !important;
+          }
+        </style> -->
+
+        <style>
+            .full-width{
+                width: 100% ;
+            }
+
+            
+        </style>
+
+     
+        
+    </head>
+    <body>
+        <div class = "container mt-5">
+            <div class = "row">
+                <div class = "col-lg-3"></div>
+                <div class = "col-lg-6 text-center shadow pb-3">
+
+                    <!-- Row 1 -->
+                    <div class="row py-3  my-3 btn btn-primary full-width">
+                        <div class="col">
+                            Calculator
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                     <div class = "row">
+                         <div class = "col my-3 "  >
+                             <textarea class = "full-width p-3 text-right" readonly id="history" rows="4"></textarea>
+                         </div>
+                     </div>   
+
+                    <!-- Row 3 -->
+                     <div class  = "row">
+                         <div class="col-10">
+
+                            <!-- Row 3.1 -->
+                             <div class = "row mt-2 mb-4">
+                                 <div class = "col">
+                                    <input type="text" class = "full-width" id="result" /> 
+                                 </div>
+                             </div>
+                     
+
+                            <!-- Row 3.2 -->
+                            
+                            <div class="row">
+
+                                <!-- Column 1 -->
+                                <div class = "col-4 ">
+
+                                    <!-- Row a -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="1" class = "full-width " onclick="dis('1')" />
+                                        </div>
+                                    </div>
+
+                                    <!-- Row b -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="4" class = "full-width" onclick="dis('4')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row c -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="7" class = "full-width" onclick="dis('7')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row d -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="." class = "full-width" onclick="dis('.')" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Column 2 -->
+                                <div class = "col-4 ">
+
+                                    <!-- Row a -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="2" class = "full-width" onclick="dis('2')" />
+                                        </div>
+                                    </div>
+
+                                    <!-- Row b -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="5" class = "full-width" onclick="dis('5')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row c -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="8" class = "full-width" onclick="dis('8')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row d -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="0" class = "full-width" onclick="dis('0')" />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Column 3 -->
+                                <div class = "col-4">
+
+                                    <!-- Row a -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="3" class = "full-width" onclick="dis('3')" />
+                                        </div>
+                                    </div>
+
+                                    <!-- Row b -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="6" class = "full-width" onclick="dis('6')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row c -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="9" class = "full-width" onclick="dis('9')" />
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Row d -->
+                                    <div class ="row mb-2">
+                                        <div class = "col ">
+                                            <input type = "button" value="=" class = "full-width" onclick="solve()" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- Row 3 Column 2     -->
+                    <div class = "col-2">
+                        <!-- Row 3.2.1 -->
+                        <div class = "row mt-2 mb-4">
+                            <div class = "col">
+                               <input type="button" value ="C" class = "full-width" onclick="clr()" /> 
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <!-- Column 1 -->
+                            <div class = "col-12 ">
+
+                                <!-- Row a -->
+                                <div class ="row mb-2">
+                                    <div class = "col ">
+                                        <input type = "button" value="-" class = "full-width " onclick="dis('-')" />
+                                    </div>
+                                </div>
+
+                                <!-- Row b -->
+                                <div class ="row mb-2">
+                                    <div class = "col-12 ">
+                                        <input type = "button" value="+" class = "full-width" onclick="dis('+')" />
+                                    </div>
+                                </div>
+
+
+                                <!-- Row c -->
+                                <div class ="row mb-2">
+                                    <div class = "col-12 ">
+                                        <input type = "button" value="/" class = "full-width" onclick="dis('/')" />
+                                    </div>
+                                </div>
+
+
+                                <!-- Row d -->
+                                <div class ="row mb-2">
+                                    <div class = "col ">
+                                        <input type = "button" value="*" class = "full-width" onclick="dis('*')" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                    </div>
+
+                    </div>
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function dis(val){
+                document.getElementById("result").value += val
+            }
+
+            function clr(){
+                document.getElementById("result").value =""
+            }
+
+            function solve(){
+                var x = document.getElementById("result").value
+                var y = eval(x)
+                document.getElementById("result").value = ""
+                if(document.getElementById("history").value != "")
+                {
+                    document.getElementById("history").value =  document.getElementById("history").value + "\n" + x + " = " + y
+                }
+                else{
+                    document.getElementById("history").value =  document.getElementById("history").value + x + " = " + y
+                }
+            }
+        </script>
+
+    </body>
+</html>
